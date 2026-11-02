@@ -1,0 +1,16 @@
+{
+  "name": "Ola Nordmann nettsider",
+  "short_name": "Ola Nordmann",
+  "lang": "no",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#fbfaf6",
+  "theme_color": "#1f6f61",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
