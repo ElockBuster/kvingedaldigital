@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fjordly Elektro | Fiktiv demo</title>
+    <meta name="description" content="Fiktiv demo for elektrikerbedrift med tjenester, befaring og kontakt.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css?v=1">
+    <style>
+      :root {
+        --demo-ink: #111923;
+        --demo-steel: #4b5c6d;
+        --demo-blue: #173b62;
+        --demo-signal: #e7b34a;
+        --demo-bg: #f5f7f8;
+      }
+
+      body.demo-electric {
+        background: var(--demo-bg);
+        color: var(--demo-ink);
+        font-family: "Trebuchet MS", Arial, sans-serif;
+      }
+
+      .electric-hero {
+        background: #15283a;
+        color: #fff;
+        padding: 76px 0;
+      }
+
+      .electric-nav,
+      .electric-grid,
+      .electric-services,
+      .electric-contact {
+        width: min(1100px, calc(100% - 40px));
+        margin-inline: auto;
+      }
+
+      .electric-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+        font-weight: 800;
+      }
+
+      .electric-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+        gap: 48px;
+        align-items: center;
+      }
+
+      .electric-hero h1 {
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 3.7rem;
+      }
+
+      .electric-hero p {
+        max-width: 620px;
+        color: #d9e3ec;
+        font-size: 1.15rem;
+      }
+
+      .electric-panel {
+        background: #fff;
+        color: var(--demo-ink);
+        border-radius: 8px;
+        padding: 28px;
+        border-top: 6px solid var(--demo-signal);
+      }
+
+      .electric-services {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        padding: 64px 0;
+      }
+
+      .electric-services article,
+      .electric-contact {
+        background: #fff;
+        border: 1px solid #dce2e7;
+        border-radius: 8px;
+        padding: 24px;
+      }
+
+      .electric-contact {
+        margin-bottom: 64px;
+      }
+
+      .electric-button {
+        display: inline-flex;
+        min-height: 46px;
+        align-items: center;
+        padding: 11px 18px;
+        border-radius: 8px;
+        background: var(--demo-signal);
+        color: #111923;
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      @media (max-width: 800px) {
+        .electric-grid,
+        .electric-services {
+          grid-template-columns: 1fr;
+        }
+
+        .electric-hero h1 {
+          font-size: 2.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="demo-electric">
+    <header class="electric-nav">
+      <a href="/">Fjordly Elektro</a>
+      <a href="#befaring">Bestill befaring</a>
+    </header>
+    <main>
+      <section class="electric-hero">
+        <div class="electric-grid">
+          <div>
+            <p>Fiktiv demo for håndverker</p>
+            <h1>Elektriker for bolig og næring</h1>
+            <p>Installasjon, feilsøking og oppgradering av sikringsskap utført med ryddig kommunikasjon og tydelige avtaler.</p>
+            <a class="electric-button" href="#befaring">Bestill befaring</a>
+          </div>
+          <img src="/assets/demo-handverker.png" alt="Illustrasjon av nettsidedesign for elektriker" width="700" height="460">
+        </div>
+      </section>
+
+      <section class="electric-services" aria-label="Tjenester">
+        <article>
+          <h2>Installasjon</h2>
+          <p>Nye kurser, belysning, elbillader og smarte løsninger.</p>
+        </article>
+        <article>
+          <h2>Feilsøking</h2>
+          <p>Systematisk feilsøk ved strømbrudd, jordfeil og ustabile anlegg.</p>
+        </article>
+        <article>
+          <h2>Sikringsskap</h2>
+          <p>Oppgradering og kontroll av sikringsskap i eldre og nyere bygg.</p>
+        </article>
+      </section>
+
+      <section class="electric-contact" id="befaring">
+        <h2>Bestill befaring</h2>
+        <p>Send en kort beskrivelse av jobben, så finner vi et tidspunkt som passer.</p>
+        <a class="electric-button" href="mailto:post@fjordly-elektro-demo.no">post@fjordly-elektro-demo.no</a>
+      </section>
+    </main>
+  </body>
+</html>
