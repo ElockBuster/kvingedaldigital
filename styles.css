@@ -271,7 +271,6 @@ h3 {
   padding: 90px 0;
 }
 
-.intro-grid,
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.86fr);
@@ -279,15 +278,14 @@ h3 {
   align-items: center;
 }
 
-.intro-grid p:not(.section-label),
+.intro-content p:not(.section-label),
 .section-heading p,
 .contact-grid p {
   color: var(--muted);
 }
 
-.portrait {
-  border-radius: 8px;
-  box-shadow: var(--shadow);
+.intro-content > div {
+  max-width: 720px;
 }
 
 .services-section,
@@ -464,7 +462,6 @@ textarea {
     font-size: 2.1rem;
   }
 
-  .intro-grid,
   .contact-grid,
   .service-list,
   .demo-grid {
