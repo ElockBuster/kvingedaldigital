@@ -163,15 +163,6 @@ textarea {
   background: #1c3732;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background-image: linear-gradient(90deg, rgba(18, 37, 34, 0.88), rgba(18, 37, 34, 0.44)), url("./assets/hero-local-web.png");
-  background-position: center;
-  background-size: cover;
-}
-
 .hero::after {
   content: "";
   position: absolute;
@@ -510,10 +501,6 @@ textarea {
 
   .hero {
     min-height: 500px;
-  }
-
-  .hero-bg {
-    background-image: linear-gradient(90deg, rgba(18, 37, 34, 0.9), rgba(18, 37, 34, 0.65)), url("./assets/hero-local-web.png");
   }
 
   .hero-inner {
