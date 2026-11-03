@@ -284,8 +284,23 @@ h3 {
   color: var(--muted);
 }
 
+.intro-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
+  gap: 56px;
+  align-items: center;
+}
+
 .intro-content > div {
   max-width: 720px;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .services-section,
@@ -462,6 +477,7 @@ textarea {
     font-size: 2.1rem;
   }
 
+  .intro-content,
   .contact-grid,
   .service-list,
   .demo-grid {
