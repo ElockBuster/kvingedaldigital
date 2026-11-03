@@ -6,7 +6,7 @@
     <title>Fjordly Elektro | Fiktiv demo</title>
     <meta name="description" content="Fiktiv demo for elektrikarbedrift med tenester, befaring og kontakt.">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../styles.css?v=1">
+    <link rel="stylesheet" href="../styles.css?v=7">
     <style>
       :root {
         --demo-ink: #111923;
@@ -114,9 +114,13 @@
     </style>
   </head>
   <body class="demo-electric">
+    <nav class="demo-notice" aria-label="Demomeny">
+      <a class="button outline" href="../">Tilbake til hovudsida</a>
+      <p id="demo-info">Fiktiv demo. Bestilling er ikkje aktiv.</p>
+    </nav>
     <header class="electric-nav">
-      <a href="../">Fjordly Elektro</a>
-      <a href="#befaring">Bestill befaring</a>
+      <span>Fjordly Elektro</span>
+      <button class="demo-booking-link" type="button" disabled aria-describedby="demo-info">Bestill befaring</button>
     </header>
     <main>
       <section class="electric-hero">
@@ -125,7 +129,7 @@
             <p>Fiktiv demo for handverkar</p>
             <h1>Elektrikar for bustad og næring</h1>
             <p>Installasjon, feilsøking og oppgradering av sikringsskap utført med ryddig kommunikasjon og tydelege avtalar.</p>
-            <a class="electric-button" href="#befaring">Bestill befaring</a>
+            <button class="electric-button" type="button" disabled aria-describedby="demo-info">Bestill befaring</button>
           </div>
           <img src="../assets/demo-handverker.png" alt="Illustrasjon av nettsidedesign for elektrikar" width="700" height="460">
         </div>
@@ -149,7 +153,7 @@
       <section class="electric-contact" id="befaring">
         <h2>Bestill befaring</h2>
         <p>Send ei kort skildring av jobben, så finn vi eit tidspunkt som passar.</p>
-        <a class="electric-button" href="mailto:post@fjordly-elektro-demo.no">post@fjordly-elektro-demo.no</a>
+        <button class="electric-button" type="button" disabled aria-describedby="demo-info">Bestill befaring</button>
       </section>
     </main>
   </body>

@@ -6,7 +6,7 @@
     <title>Solheim Frisør | Fiktiv demo</title>
     <meta name="description" content="Fiktiv demo for frisør med tenester, opningstider og timebestilling.">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../styles.css?v=1">
+    <link rel="stylesheet" href="../styles.css?v=7">
     <style>
       :root {
         --salon-ink: #32241f;
@@ -113,9 +113,13 @@
     </style>
   </head>
   <body class="demo-salon">
+    <nav class="demo-notice" aria-label="Demomeny">
+      <a class="button outline" href="../">Tilbake til hovudsida</a>
+      <p id="demo-info">Fiktiv demo. Bestilling er ikkje aktiv.</p>
+    </nav>
     <header class="salon-top salon-wrap">
-      <a href="../">Solheim Frisør</a>
-      <a href="#time">Bestill time</a>
+      <span>Solheim Frisør</span>
+      <button class="demo-booking-link" type="button" disabled aria-describedby="demo-info">Bestill time</button>
     </header>
     <main>
       <section class="salon-hero salon-wrap">
@@ -124,7 +128,7 @@
             <p>Fiktiv demo for frisør og butikk</p>
             <h1>Klipp, farge og styling i roleg tempo</h1>
             <p>Ei varm salongside med tydelege tenester, opningstider og enkel veg til timebestilling.</p>
-            <a class="salon-button" href="#time">Bestill time</a>
+            <button class="salon-button" type="button" disabled aria-describedby="demo-info">Bestill time</button>
           </div>
           <img src="../assets/demo-frisor.png" alt="Illustrasjon av frisørside med galleri og timebestilling" width="700" height="460">
         </div>
@@ -143,7 +147,7 @@
           <h2>Opningstider</h2>
           <p>Måndag til fredag: 09.00-17.00</p>
           <p>Laurdag: 10.00-14.00</p>
-          <a class="salon-button" href="mailto:hei@solheim-frisor-demo.no">Send timeønske</a>
+          <button class="salon-button" type="button" disabled aria-describedby="demo-info">Send timeønske</button>
         </section>
         <section aria-label="Galleri">
           <h2>Galleri</h2>
