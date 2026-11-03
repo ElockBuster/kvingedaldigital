@@ -22,7 +22,7 @@
     <meta property="og:locale" content="nn_NO">
     <link rel="icon" href="./favicon.svg?v=2" type="image/svg+xml">
     <link rel="manifest" href="./site.webmanifest">
-    <link rel="stylesheet" href="./styles.css?v=5">
+    <link rel="stylesheet" href="./styles.css?v=6">
   </head>
   <body>
     <a class="skip-link" href="#innhold">Hopp til innhald</a>
@@ -163,44 +163,29 @@
             <p class="section-label">Kontakt</p>
             <h2 id="kontakt-title">Fortel kort kva du treng</h2>
             <p>
-              Send ei melding, så tek eg kontakt for ein uforpliktande prat om kva som passar
-              for bedrifta di.
+              Fortel litt om bedrifta di og kva du ønskjer hjelp med.
+              Send meg ein e-post eller ring for ein uforpliktande prat.
             </p>
-            <div class="contact-lines" aria-label="Kontaktinformasjon">
-              <a href="mailto:kenhenrikkvingedal@gmail.com">kenhenrikkvingedal@gmail.com</a>
-              <a href="tel:+4790478528">+47 904 78 528</a>
-            </div>
           </div>
 
-          <form class="contact-form" id="contact-form" novalidate>
-            <div class="form-row">
-              <label for="name">Namn</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
+          <div class="contact-card">
+            <h3>Ken Henrik Kvingedal</h3>
+            <div class="contact-actions">
+              <a class="button primary" href="mailto:kenhenrikkvingedal@gmail.com">Send e-post</a>
+              <a class="button outline" href="tel:+4790478528">Ring meg</a>
             </div>
-            <div class="form-row">
-              <label for="email">E-post</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-            </div>
-            <div class="form-row">
-              <label for="phone">Telefon <span>valfritt</span></label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel">
-            </div>
-            <div class="form-row">
-              <label for="message">Melding</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="honeypot" aria-hidden="true">
-              <label for="company">Firma</label>
-              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
-            </div>
-            <p class="privacy">
-              Ved å sende inn skjemaet samtykkjer du til at opplysningane blir brukte til å svare
-              på henvendelsen din. Dei blir ikkje lagra vidare eller delte med andre, utover
-              tenesta som blir brukt til å sende meldinga.
-            </p>
-            <button class="button primary" type="submit">Send melding</button>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-          </form>
+            <dl class="contact-details">
+              <div>
+                <dt>E-post</dt>
+                <dd><a href="mailto:kenhenrikkvingedal@gmail.com">kenhenrikkvingedal@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Telefon</dt>
+                <dd><a href="tel:+4790478528">+47 904 78 528</a></dd>
+              </div>
+            </dl>
+            <p class="contact-note">E-postknappen opnar e-postprogrammet ditt. Du kan òg kopiere adressa og bruke henne der du les e-post.</p>
+          </div>
         </div>
       </section>
     </main>
@@ -211,6 +196,6 @@
       </div>
     </footer>
 
-    <script src="./script.js?v=2"></script>
+    <script src="./script.js?v=3"></script>
   </body>
 </html>

@@ -38,9 +38,7 @@ a {
   color: inherit;
 }
 
-button,
-input,
-textarea {
+button {
   font: inherit;
 }
 
@@ -391,76 +389,57 @@ h3 {
   text-underline-offset: 4px;
 }
 
-.contact-lines {
-  display: grid;
-  gap: 8px;
-  margin-top: 28px;
-}
-
-.contact-lines a {
-  color: var(--accent-dark);
-  font-weight: 700;
-}
-
-.contact-form {
-  display: grid;
-  gap: 16px;
-  padding: 24px;
+.contact-card {
+  min-width: 0;
+  padding: 28px;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
 
-.form-row {
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.button.outline {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+  background: transparent;
+}
+
+.button.outline:hover {
+  background: #e4f0ec;
+}
+
+.contact-details {
   display: grid;
-  gap: 7px;
+  gap: 16px;
+  margin: 24px 0 0;
 }
 
-.form-row label {
-  font-weight: 700;
-}
-
-.form-row span,
-.privacy {
+.contact-details dt {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 
-input,
-textarea {
-  width: 100%;
-  border: 1px solid #bfb8a8;
-  border-radius: 8px;
-  background: #fffdf9;
-  color: var(--ink);
-  padding: 12px 13px;
+.contact-details dd {
+  margin: 2px 0 0;
 }
 
-textarea {
-  resize: vertical;
-}
-
-.honeypot {
-  display: none;
-}
-
-.privacy {
-  margin: 0;
-}
-
-.form-status {
-  min-height: 24px;
-  margin: 0;
+.contact-details a {
+  color: var(--accent-dark);
   font-weight: 700;
+  overflow-wrap: anywhere;
+  text-underline-offset: 3px;
 }
 
-.form-status.success {
-  color: #1f6f61;
-}
-
-.form-status.error {
-  color: #9c2f24;
+.contact-note {
+  margin: 20px 0 0;
+  font-size: 0.9rem;
 }
 
 .footer {
@@ -547,7 +526,7 @@ textarea {
     padding: 62px 0;
   }
 
-  .contact-form,
+  .contact-card,
   .service-item {
     padding: 18px;
   }
