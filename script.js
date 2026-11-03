@@ -40,12 +40,12 @@ if (form && statusEl) {
     };
 
     if (!payload.name || !payload.email || !payload.message) {
-      setStatus("Fyll ut navn, e-post og melding.", "error");
+      setStatus("Fyll ut namn, e-post og melding.", "error");
       return;
     }
 
     if (!isValidEmail(payload.email)) {
-      setStatus("Skriv inn en gyldig e-postadresse.", "error");
+      setStatus("Skriv inn ei gyldig e-postadresse.", "error");
       return;
     }
 
@@ -63,13 +63,13 @@ if (form && statusEl) {
       const result = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        throw new Error(result.error || "Noe gikk galt. Prøv igjen senere.");
+        throw new Error(result.error || "Noko gjekk gale. Prøv igjen seinare.");
       }
 
       form.reset();
-      setStatus("Takk! Meldingen er sendt.", "success");
+      setStatus("Takk! Meldinga er send.", "success");
     } catch (error) {
-      setStatus(error.message || "Noe gikk galt. Prøv igjen senere.", "error");
+      setStatus(error.message || "Noko gjekk gale. Prøv igjen seinare.", "error");
     } finally {
       submitButton.disabled = false;
     }
