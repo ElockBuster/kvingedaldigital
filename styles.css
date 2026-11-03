@@ -295,6 +295,18 @@ h3 {
   max-width: 720px;
 }
 
+.portrait-figure {
+  width: 100%;
+  max-width: 360px;
+  margin: 0;
+}
+
+.portrait-figure figcaption {
+  margin-top: 14px;
+  text-align: center;
+  font-weight: 700;
+}
+
 .portrait {
   width: 100%;
   max-width: 360px;
